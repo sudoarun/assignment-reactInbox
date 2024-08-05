@@ -16,26 +16,26 @@ const Page = () => {
           <div>
             <img src="/Logo_holder.svg" />
           </div>
-          <ul className="mx-auto flex flex-col items-center gap-6 pt-10">
-            <li>
+          <ul className="mx-auto flex flex-col items-center gap-3 pt-10">
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/Home.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/email.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/emails.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/share.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/menu.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/inbox.svg" />
             </li>
-            <li>
+            <li className="hover:bg-[#2a2e33] p-2 rounded-lg">
               <img src="/bar_chart.svg" />
             </li>
           </ul>

@@ -18,10 +18,10 @@ const InboxPreview = () => {
           </div>
         </div>
       </div>
-      <div class="flex items-center my-4 px-4">
-        <div class="flex-grow border-t border-[#F8FAFC33]"></div>
-        <span class="px-2 bg-[#1F1F1F] text-sm py-1">Today</span>
-        <div class="flex-grow border-t border-[#F8FAFC33]"></div>
+      <div className="flex items-center my-4 px-4">
+        <div className="flex-grow border-t border-[#F8FAFC33]"></div>
+        <span className="px-2 bg-[#1F1F1F] text-sm py-1">Today</span>
+        <div className="flex-grow border-t border-[#F8FAFC33]"></div>
       </div>
       <div className="px-4">
         <div className="p-4 rounded bg-[#141517] border border-[#343A40]">
@@ -46,10 +46,12 @@ const InboxPreview = () => {
           </div>
         </div>
       </div>
-      <div class="flex items-center my-4 px-4">
-        <div class="flex-grow border-t border-[#F8FAFC33]"></div>
-        <span class="px-2 bg-[#1F1F1F] text-sm py-1">View all 4 replies</span>
-        <div class="flex-grow border-t border-[#F8FAFC33]"></div>
+      <div className="flex items-center my-4 px-4">
+        <div className="flex-grow border-t border-[#F8FAFC33]"></div>
+        <span className="px-2 bg-[#1F1F1F] text-sm py-1">
+          View all 4 replies
+        </span>
+        <div className="flex-grow border-t border-[#F8FAFC33]"></div>
       </div>
       <div className="ps-4 fixed bottom-5">
         <button className="mt-4 bg-blue-600 px-4 py-2 rounded">Reply</button>

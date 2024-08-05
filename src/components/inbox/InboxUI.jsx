@@ -27,7 +27,7 @@ const InboxUISideBar = () => {
         <span className="text-gray-400">Newest</span>
       </div>
       <div className="py-2 border-t border-[#33383F]">
-        <div className="p-2 rounded">
+        <div className="p-2 rounded hover:bg-[#2a2e33] cursor-pointer">
           <div className="flex justify-between">
             <h3 className="font-sembold relative flex items-center">
               <img src="/newPoint.svg" className="pe-2" />
