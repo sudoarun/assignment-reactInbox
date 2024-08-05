@@ -1,3 +1,4 @@
+import Inbox from "@/pages/inbox";
 import ZerothPage from "@/pages/zerothPage";
 import React from "react";
 
@@ -44,7 +45,8 @@ const Page = () => {
         </div>
       </div>
       <div className="pt-[65px] pl-[65px] w-full h-screen">
-        <ZerothPage />
+        {/* <ZerothPage /> */}
+        <Inbox />
       </div>
     </div>
   );
