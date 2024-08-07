@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
-  const getURL = new URL(location.href);
-  const token = getURL.searchParams.get("token");
+  const getURL = new URL(window?.location?.href);
+  const token = getURL?.searchParams?.get("token");
   const router = useRouter();
   const registerWithGoogle = () => {
     register();
