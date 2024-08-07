@@ -3,29 +3,31 @@
 import { register } from "@/utils/API";
 import configFile from "@/utils/config";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const getURL = new URL(window?.location?.href);
-  const token = getURL?.searchParams?.get("token");
+  const [urlToken, setUrlToken] = useState("");
   const router = useRouter();
   const registerWithGoogle = () => {
     register();
   };
   useEffect(() => {
+    const getURL = new URL(window?.location?.href);
+    const token = getURL?.searchParams?.get("token");
+    setUrlToken(token);
     if (token) {
       localStorage.setItem("token", token);
-      location.href = `http://${configFile.redirectURL}`;
+      location.href = `${configFile.redirectURL}`;
       return;
     }
-  }, [token]);
+  }, [urlToken]);
   useEffect(() => {
     let token = localStorage.getItem("token");
     if (token) {
       router.push("/dashboard");
     }
     return;
-  }, [token]);
+  }, [urlToken]);
 
   return (
     <div className="bg-black text-white h-screen flex flex-col justify-between">
