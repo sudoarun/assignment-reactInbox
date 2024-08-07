@@ -1,9 +1,15 @@
 "use client";
 
+import { register } from "@/utils/API";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
+  const registerWithGoogle = () => {
+    const data = register()
+      .then((res) => console.log(res))
+      .catch((e) => console.log());
+  };
   return (
     <div className="bg-black text-white h-screen flex flex-col justify-between">
       <div className="py-3 border-b border-[#25262B]">
@@ -17,7 +23,10 @@ export default function Home() {
           <h1 className="text-center font-semibold text-xl">
             Create a new account
           </h1>
-          <button className="border border-[#343A40] w-full py-3 rounded-lg font-light flex justify-center items-center">
+          <button
+            className="border border-[#343A40] w-full py-3 rounded-lg font-light flex justify-center items-center"
+            onClick={registerWithGoogle}
+          >
             <img src="/googleFrame.svg" className="pe-2" />
             Sign Up with Google
           </button>

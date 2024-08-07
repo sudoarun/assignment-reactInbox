@@ -1,4 +1,5 @@
 import React from "react";
+import MessageBox from "./MessageBox";
 
 const InboxPreview = () => {
   return (
@@ -53,9 +54,13 @@ const InboxPreview = () => {
         </span>
         <div className="flex-grow border-t border-[#F8FAFC33]"></div>
       </div>
-      <div className="ps-4 fixed bottom-5">
-        <button className="mt-4 bg-blue-600 px-4 py-2 rounded">Reply</button>
+      <div className="ps-4 fixed bottom-5 w-full">
+        <button className="mt-4 bg-blue-600 px-4 py-2 rounded relative">
+          <img src="/arrowLeftShare.svg" className="inline me-2" />
+          <span>Reply</span>
+        </button>
       </div>
+      <MessageBox />
     </div>
   );
 };

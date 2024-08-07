@@ -45,8 +45,9 @@ const InboxDetails = () => {
             </div>
             <div>
               <span className=" px-2 py-1 rounded  block">Step 1: Email</span>
-              <span className="text-gray-400 ml-2 block text-xs">
-                Sent 3rd, Feb
+              <span className="text-gray-400 ml-2 text-xs flex gap-2">
+                <img src="/sendMail.svg" />
+                <span> Sent 3rd, Feb</span>
               </span>
             </div>
           </li>
@@ -57,8 +58,8 @@ const InboxDetails = () => {
             </div>
             <div>
               <span className=" px-2 py-1 rounded  block">Step 2: Email</span>
-              <span className="text-gray-400 ml-2 block text-xs">
-                Opened 5th, Feb
+              <span className="text-gray-400 ml-2 flex text-xs gap-2">
+                <img src="/openMail.svg" /> <span>Opened 5th, Feb</span>
               </span>
             </div>
           </li>
@@ -68,8 +69,8 @@ const InboxDetails = () => {
             </div>
             <div>
               <span className="px-2 py-1 rounded block">Step 3: Email</span>
-              <span className="text-gray-400 ml-2 block text-xs">
-                Opened 5th, Feb
+              <span className="text-gray-400 ml-2 flex text-xs gap-2">
+                <img src="/openMail.svg" /> <span>Opened 5th, Feb</span>
               </span>
             </div>
           </li>
