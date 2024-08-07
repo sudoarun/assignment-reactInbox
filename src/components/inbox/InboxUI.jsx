@@ -36,7 +36,7 @@ const InboxUISideBar = () => {
             <span className="text-[#FCFCFC66]">Mar 7</span>
           </div>
 
-          <p className="text-gray-400 text-sm">I've tried a lot and .</p>
+          <p className="text-gray-400 text-sm">{"I've tried a lot and ."}</p>
           <div className="flex items-center mt-3">
             <span className="px-2 py-1 rounded-3xl text-xs font-semibold flex items-center bg-[#222426]">
               <img src="/interestedPoint.svg" className="inline pe-2" />{" "}
