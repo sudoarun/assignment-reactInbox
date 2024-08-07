@@ -1,15 +1,32 @@
 "use client";
 
 import { register } from "@/utils/API";
-import { useRouter } from "next/navigation";
+import configFile from "@/utils/config";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const search = searchParams.get("token");
   const router = useRouter();
   const registerWithGoogle = () => {
-    const data = register()
-      .then((res) => console.log(res))
-      .catch((e) => console.log());
+    register();
   };
+  useEffect(() => {
+    if (search) {
+      localStorage.setItem("token", search);
+      location.href = `http://${configFile.redirectURL}`;
+      return;
+    }
+  }, [search]);
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+    if (token) {
+      router.push("/dashboard");
+    }
+    return;
+  }, [search]);
+
   return (
     <div className="bg-black text-white h-screen flex flex-col justify-between">
       <div className="py-3 border-b border-[#25262B]">
