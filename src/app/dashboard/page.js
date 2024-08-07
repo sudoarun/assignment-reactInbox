@@ -5,11 +5,11 @@ import { getListOfMails } from "@/utils/API";
 import React, { useEffect } from "react";
 
 const Page = () => {
-  useEffect(() => {
-    getListOfMails()
-      .then((res) => console.log(res))
-      .catch((e) => console.log(e));
-  }, []);
+  // useEffect(() => {
+  //   getListOfMails()
+  //     .then((res) => console.log(res))
+  //     .catch((e) => console.log(e));
+  // }, []);
   return (
     <div className="bg-black text-white h-screen relative">
       <div className="bg-[#1F1F1F] border-b border-[#343A40] fixed top-0 pl-[65px] h-[64px] w-full flex items-center justify-between pe-3">

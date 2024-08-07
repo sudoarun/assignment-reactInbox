@@ -17,7 +17,7 @@ export default function Home() {
     setUrlToken(token);
     if (token) {
       localStorage.setItem("token", token);
-      location.href = `${configFile.redirectURL}`;
+      router.push("/dashboard");
       return;
     }
   }, [urlToken]);
@@ -28,7 +28,6 @@ export default function Home() {
     }
     return;
   }, [urlToken]);
-
   return (
     <div className="bg-black text-white h-screen flex flex-col justify-between">
       <div className="py-3 border-b border-[#25262B]">
